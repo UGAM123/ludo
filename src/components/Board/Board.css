@@ -1,0 +1,170 @@
+.board {
+  width: 700px;
+  aspect-ratio: 1;
+  background-color: rgb(255, 255, 255);
+  border: 20px solid black;
+
+  display: grid;
+  grid-template-rows: repeat(15, 1fr);
+  grid-template-columns: repeat(15, 1fr);
+}
+
+.board div {
+  /* border: 0.5px solid black; */
+  box-shadow: inset 0px 0px 0px 0.5px black;
+}
+
+.board-home {
+  grid-row: 7 / span 3;
+  grid-column: 7 / span 3;
+  background-color: green;
+}
+
+.board-base {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.board-tl-base {
+  grid-row: 1 / span 6;
+  grid-column: 1 / span 6;
+  background-color: green;
+}
+
+.board-br-base {
+  grid-row: 10 / span 6;
+  grid-column: 10 / span 6;
+  background-color: blue;
+}
+
+.board-tr-base {
+  grid-row: 1 / span 6;
+  grid-column: 10 / span 6;
+  background-color: yellow;
+}
+
+.board-bl-base {
+  grid-row: 10 / span 6;
+  grid-column: 1 / span 6;
+
+  background-color: red;
+}
+
+.base-container {
+  background: white;
+  grid-row: 2 / span 4;
+  grid-column: 2 / span 4;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20%;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.base-inner-container {
+  width: 30%;
+  height: 30%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.base-square {
+  background-color: black;
+}
+
+.pin {
+  width: 40%;
+  height: 70%;
+  background-color: rgba(36, 35, 35, 0.835);
+  border-radius: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.pin p {
+  width: 70%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  margin: 3px auto;
+}
+
+/* Define positions for each item */
+.item1 {
+  grid-area: 7/2;
+}
+.item2 {
+  grid-area: 8/2;
+}
+.item3 {
+  grid-area: 8/3;
+}
+.item4 {
+  grid-area: 8/4;
+}
+.item5 {
+  grid-area: 8/5;
+}
+.item6 {
+  grid-area: 8/6;
+}
+.item7 {
+  grid-area: 2/9;
+}
+.item8 {
+  grid-area: 2/8;
+}
+.item9 {
+  grid-area: 3/8;
+}
+.item10 {
+  grid-area: 4/8;
+}
+.item11 {
+  grid-area: 5/8;
+}
+.item12 {
+  grid-area: 6/8;
+}
+.item13 {
+  grid-area: 14/7;
+}
+.item14 {
+  grid-area: 14/8;
+}
+.item15 {
+  grid-area: 13/8;
+}
+.item16 {
+  grid-area: 12/8;
+}
+.item17 {
+  grid-area: 11/8;
+}
+.item18 {
+  grid-area: 10/8;
+}
+.item19 {
+  grid-area: 9/14;
+}
+.item20 {
+  grid-area: 8/14;
+}
+.item21 {
+  grid-area: 8/13;
+}
+.item22 {
+  grid-area: 8/12;
+}
+.item23 {
+  grid-area: 8/11;
+}
+.item24 {
+  grid-area: 8/10;
+}

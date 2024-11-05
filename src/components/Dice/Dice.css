@@ -1,0 +1,22 @@
+.dice-container {
+  height: fit-content;
+  margin: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.dice {
+  width: 80px;
+  height: 80px;
+  outline: none;
+  border: none;
+  padding: 0;
+  background: none;
+}
+
+.dice img {
+  width: 100%;
+  height: 100%;
+}
