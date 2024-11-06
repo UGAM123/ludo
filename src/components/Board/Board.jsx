@@ -14,15 +14,16 @@ const Board = () => {
           <div className="base-container">
             {Array(4)
               .fill(0)
-              .map(() => {
+              .map((item, index) => {
                 return (
                   <div
+                    key={index}
                     className="base-inner-container"
                     style={{ background: color }}
                   >
-                    <p className="pin">
+                    <div className="pin">
                       <p style={{ background: color }}></p>
-                    </p>
+                    </div>
                   </div>
                 );
               })}
