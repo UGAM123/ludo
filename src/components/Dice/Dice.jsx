@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./Dice.css";
 
-const Dice = () => {
+const Dice = ({ onRoll }) => {
   const [diceRoll, setDiceRoll] = useState(1);
   const [num, setNum] = useState(1);
   const [diceRolling, setDiceRolling] = useState(false);
+  const [totalCount, setTotalCount] = useState(0);
 
   const rollingAnimation = () => {
     setNum(Math.floor(Math.random() * 6) + 1);
@@ -16,7 +17,9 @@ const Dice = () => {
       const intervalId = setInterval(rollingAnimation, 50);
       setDiceRolling(true);
       setTimeout(() => {
-        setDiceRoll(Math.floor(Math.random() * 6) + 1);
+        const rollResult = Math.floor(Math.random() * 6) + 1;
+        setDiceRoll(rollResult);
+        onRoll(rollResult);
         setDiceRolling(false);
         clearInterval(intervalId);
       }, 500);
