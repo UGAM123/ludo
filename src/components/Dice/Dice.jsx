@@ -29,22 +29,22 @@ const Dice = () => {
         {!diceRolling && (
           <>
             {diceRoll == 1 && (
-              <img src="assets/images/red_dice/dice-number-1.png" />
+              <img src="./assets/images/red_dice/dice-number-1.png" />
             )}
             {diceRoll == 2 && (
-              <img src="assets/images/red_dice/dice-number-2.png" />
+              <img src="./assets/images/red_dice/dice-number-2.png" />
             )}
             {diceRoll == 3 && (
-              <img src="assets/images/red_dice/dice-number-3.png" />
+              <img src="./assets/images/red_dice/dice-number-3.png" />
             )}
             {diceRoll == 4 && (
-              <img src="assets/images/red_dice/dice-number-4.png" />
+              <img src="./assets/images/red_dice/dice-number-4.png" />
             )}
             {diceRoll == 5 && (
-              <img src="assets/images/red_dice/dice-number-5.png" />
+              <img src="./assets/images/red_dice/dice-number-5.png" />
             )}
             {diceRoll == 6 && (
-              <img src="assets/images/red_dice/dice-number-6.png" />
+              <img src="./assets/images/red_dice/dice-number-6.png" />
             )}
           </>
         )}
