@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/ludo">
       <Routes>
         <Route path="/" element={<Navigate to="/home" replace />} />
         <Route path="/home" element={<Home />} />
